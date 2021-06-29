@@ -109,7 +109,7 @@ main {
 
 /* line 83, ../sass/main.sass */
 .link-style {
-  text-decoration: none;
+  text-decoration: none !important;
   cursor: pointer;
 }
 /* line 86, ../sass/main.sass */
@@ -192,20 +192,20 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-bottom: 100px;
   background-color: rgba(0, 0, 0, 0.4);
   border: 1px solid rgba(150, 0, 0, 0.7);
 }
 
-/* line 154, ../sass/main.sass */
+/* line 153, ../sass/main.sass */
 .tanks, .heals, .dps {
   color: white;
   margin-top: 30px;
 }
 
-/* line 158, ../sass/main.sass */
+/* line 157, ../sass/main.sass */
 .ol-no-style {
   list-style-type: none;
+  padding: 0;
 }
 
 /* line 161, ../sass/main.sass */
@@ -320,9 +320,10 @@ main {
   /* line 231, ../sass/main.sass */
   .right-nav-ol-li {
     margin: 0px !important;
+    text-decoration: none;
   }
 
-  /* line 233, ../sass/main.sass */
+  /* line 234, ../sass/main.sass */
   .barre {
     height: 1px !important;
     width: 100% !important;
@@ -330,14 +331,14 @@ main {
     margin-bottom: 20px;
   }
 
-  /* line 238, ../sass/main.sass */
+  /* line 239, ../sass/main.sass */
   header {
     display: flex;
     flex-direction: column !important;
     background-color: black !important;
   }
 
-  /* line 242, ../sass/main.sass */
+  /* line 243, ../sass/main.sass */
   .emplacement-logo {
     justify-content: center !important;
     margin-left: 0px !important;
@@ -345,7 +346,7 @@ main {
     background-color: black !important;
   }
 
-  /* line 247, ../sass/main.sass */
+  /* line 248, ../sass/main.sass */
   .cross {
     top: 6% !important;
   }

@@ -81,7 +81,7 @@ main
     left: 50%
     margin-top: 10px
 .link-style
-    text-decoration: none
+    text-decoration: none !important
     cursor: pointer
     &:visited
         text-decoration: none !important
@@ -147,7 +147,6 @@ main
     display: flex
     flex-direction: row
     justify-content: space-around
-    margin-bottom: 100px
     background-color: rgba(0, 0, 0, 0.4)
     border: 1px solid rgba(150, 0, 0, 0.7)
 
@@ -157,6 +156,7 @@ main
 
 .ol-no-style
     list-style-type: none
+    padding: 0
 
 .dh
     color: #A330C9
@@ -230,6 +230,7 @@ main
         flex-wrap: wrap !important
         &-li
             margin: 0px !important
+            text-decoration: none
     .barre
         height: 1px !important
         width: 100% !important
