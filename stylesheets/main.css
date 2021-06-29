@@ -1,0 +1,352 @@
+/* line 1, ../sass/main.sass */
+html, body {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background-image: url("/bg2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 12, ../sass/main.sass */
+html header, body header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  height: 80px;
+  z-index: 2;
+}
+/* line 20, ../sass/main.sass */
+html header .left-nav, body header .left-nav {
+  width: 33%;
+}
+/* line 22, ../sass/main.sass */
+html header .left-nav-ol, body header .left-nav-ol {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-around;
+  width: 100%;
+  color: white;
+  padding: 0;
+}
+/* line 30, ../sass/main.sass */
+html header .left-nav-ol-li, body header .left-nav-ol-li {
+  margin: 5px;
+}
+/* line 32, ../sass/main.sass */
+html header .emplacement-logo, body header .emplacement-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 40px;
+  width: 100%;
+}
+/* line 38, ../sass/main.sass */
+html header .emplacement-logo .logo, body header .emplacement-logo .logo {
+  color: white;
+  font-size: 40px;
+  margin: 0;
+  font-family: marine, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+/* line 45, ../sass/main.sass */
+html header .emplacement-logo .red-head, body header .emplacement-logo .red-head {
+  width: 60 px;
+  height: 60px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+/* line 50, ../sass/main.sass */
+html header .right-nav, body header .right-nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+/* line 55, ../sass/main.sass */
+html header .right-nav-ol, body header .right-nav-ol {
+  width: 100%;
+  list-style-type: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+/* line 64, ../sass/main.sass */
+html header .right-nav-ol-li, body header .right-nav-ol-li {
+  margin: 5px;
+  transition: 0.4s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* line 70, ../sass/main.sass */
+html header .right-nav-ol-li:hover, body header .right-nav-ol-li:hover {
+  transform: scale(1.04);
+  transition: 0.4;
+  cursor: pointer;
+  color: red !important;
+}
+
+/* line 76, ../sass/main.sass */
+main {
+  width: 95%;
+  position: absolute;
+  z-index: 1;
+  transform: translate(-50%);
+  left: 50%;
+  margin-top: 10px;
+}
+
+/* line 83, ../sass/main.sass */
+.link-style {
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 86, ../sass/main.sass */
+.link-style:visited {
+  text-decoration: none !important;
+  color: unset;
+}
+
+/* line 90, ../sass/main.sass */
+.nous-rejoindre {
+  width: 100%;
+  transform: translateY(0%);
+  position: absolute;
+  z-index: 0;
+  transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+/* line 101, ../sass/main.sass */
+.barre {
+  width: 1px;
+  height: 40px;
+  background-color: red;
+}
+
+/* line 106, ../sass/main.sass */
+.socials {
+  width: 28px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+/* line 112, ../sass/main.sass */
+.pageRoster {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+/* line 122, ../sass/main.sass */
+.cross {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  font-size: 33px;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  color: red;
+}
+/* line 129, ../sass/main.sass */
+.cross:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+
+/* line 133, ../sass/main.sass */
+.titreRoster {
+  color: white;
+  margin: 0;
+  font-size: 33px;
+  margin-bottom: 40px;
+  margin-top: 60px;
+  font-family: marine, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* line 143, ../sass/main.sass */
+.containerPageRoster {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 100px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(150, 0, 0, 0.7);
+}
+
+/* line 154, ../sass/main.sass */
+.tanks, .heals, .dps {
+  color: white;
+  margin-top: 30px;
+}
+
+/* line 158, ../sass/main.sass */
+.ol-no-style {
+  list-style-type: none;
+}
+
+/* line 161, ../sass/main.sass */
+.dh {
+  color: #A330C9;
+}
+
+/* line 163, ../sass/main.sass */
+.dk {
+  color: red;
+}
+
+/* line 165, ../sass/main.sass */
+.drood {
+  color: orange;
+}
+
+/* line 167, ../sass/main.sass */
+.pal {
+  color: #f58CBA;
+}
+
+/* line 170, ../sass/main.sass */
+.lock {
+  color: #9482C9;
+}
+
+/* line 173, ../sass/main.sass */
+.shammy {
+  color: #0070DE;
+}
+
+/* line 176, ../sass/main.sass */
+.mage {
+  color: #69CCF0;
+}
+
+/* line 179, ../sass/main.sass */
+.monk {
+  color: #00FF96;
+}
+
+/* line 182, ../sass/main.sass */
+.warrior {
+  color: #C79C6E;
+}
+
+/* line 185, ../sass/main.sass */
+.hunter {
+  color: #ABD473;
+}
+
+/* line 188, ../sass/main.sass */
+.rogue {
+  color: #FFF569;
+}
+
+/* line 191, ../sass/main.sass */
+.barreHorizontale {
+  height: 1px;
+  width: 100%;
+  background-color: #969696;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 198, ../sass/main.sass */
+.welcomeMSG {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  left: 3%;
+  bottom: 20%;
+}
+
+/* line 206, ../sass/main.sass */
+.containerPageContact {
+  color: white;
+  position: absolute;
+  top: 50%;
+  font-size: 30px;
+  width: 100%;
+  opacity: 0;
+  transition: 0.4s;
+}
+/* line 214, ../sass/main.sass */
+.containerPageContact .bnet {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-around;
+}
+/* line 219, ../sass/main.sass */
+.containerPageContact .bnet h3 {
+  margin: 0;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 224, ../sass/main.sass */
+  .right-nav {
+    background-color: black !important;
+    height: 250px !important;
+  }
+
+  /* line 227, ../sass/main.sass */
+  .right-nav-ol {
+    width: 100% !important;
+    background-color: black !important;
+    flex-wrap: wrap !important;
+  }
+  /* line 231, ../sass/main.sass */
+  .right-nav-ol-li {
+    margin: 0px !important;
+  }
+
+  /* line 233, ../sass/main.sass */
+  .barre {
+    height: 1px !important;
+    width: 100% !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* line 238, ../sass/main.sass */
+  header {
+    display: flex;
+    flex-direction: column !important;
+    background-color: black !important;
+  }
+
+  /* line 242, ../sass/main.sass */
+  .emplacement-logo {
+    justify-content: center !important;
+    margin-left: 0px !important;
+    padding-bottom: 30px !important;
+    background-color: black !important;
+  }
+
+  /* line 247, ../sass/main.sass */
+  .cross {
+    top: 6% !important;
+  }
+}

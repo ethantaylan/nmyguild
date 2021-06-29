@@ -1,0 +1,249 @@
+html, body
+    background-color: black
+    height: 100%
+    width: 100%
+    margin: 0
+    font-family: 'Roboto', sans-serif
+    font-weight: 400
+    background-image: url("/bg2.png")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    header
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        width: 100%
+        position: relative
+        height: 80px
+        z-index: 2
+        .left-nav
+            width: 33%
+            &-ol
+                display: flex
+                flex-direction: row
+                list-style-type: none
+                justify-content: space-around
+                width: 100%
+                color: white
+                padding: 0
+                &-li
+                    margin: 5px
+        .emplacement-logo
+            display: flex
+            flex-direction: row
+            align-items: center
+            margin-left: 40px
+            width: 100%
+            .logo
+                color: white
+                font-size: 40px
+                margin: 0
+                font-family: marine, sans-serif
+                font-weight: 900
+                font-style: italic
+            .red-head
+                width: 60   px
+                height: 60px
+                object-fit: contain
+                margin-right: 10px
+        .right-nav
+            width: 100%
+            height: 100%
+            display: flex
+            align-items: center
+            &-ol
+                width: 100%
+                list-style-type: none
+                color: white
+                display: flex
+                flex-direction: row
+                justify-content: space-around
+                align-items: center
+                padding: 0
+                &-li
+                    margin: 5px
+                    transition: 0.4s
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    &:hover
+                        transform: scale(1.04)
+                        transition: 0.4
+                        cursor: pointer
+                        color: red !important
+                    
+main
+    width: 95%
+    position: absolute
+    z-index: 1
+    transform: translate(-50%)
+    left: 50%
+    margin-top: 10px
+.link-style
+    text-decoration: none
+    cursor: pointer
+    &:visited
+        text-decoration: none !important
+        color: unset
+
+.nous-rejoindre
+    width: 100%
+    transform: translateY(0%)
+    position: absolute
+    z-index: 0
+    transition: 0.4s
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 100px
+
+.barre
+    width: 1px
+    height: 40px
+    background-color: red
+
+.socials
+    width: 28px
+    object-fit: contain
+    margin-right: 10px
+
+
+.pageRoster
+    height: 100%
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column  
+    opacity: 0
+    transition: 0.4s
+
+.cross
+    position: absolute
+    right: 2%
+    top: 2%
+    font-size: 33px
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5)
+    color: red
+    &:hover
+        cursor: pointer
+        transform: scale(1.3)
+        
+.titreRoster
+    color: white
+    margin: 0
+    font-size: 33px
+    margin-bottom: 40px
+    margin-top: 60px
+    font-family: marine, sans-serif
+    font-weight: 900
+    font-style: italic
+
+.containerPageRoster
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4)
+    height: 80%
+    width: 80%
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    margin-bottom: 100px
+    background-color: rgba(0, 0, 0, 0.4)
+    border: 1px solid rgba(150, 0, 0, 0.7)
+
+.tanks, .heals, .dps
+    color: white
+    margin-top: 30px
+
+.ol-no-style
+    list-style-type: none
+
+.dh
+    color: #A330C9
+.dk
+    color: red
+.drood
+    color: orange
+.pal
+    color: #f58CBA
+
+.lock
+    color: #9482C9
+
+.shammy
+    color: #0070DE
+
+.mage
+    color: #69CCF0
+
+.monk
+    color: #00FF96
+
+.warrior
+    color: #C79C6E
+
+.hunter
+    color: #ABD473
+
+.rogue
+    color: #FFF569
+
+.barreHorizontale
+    height: 1px
+    width: 100%
+    background-color: rgba(150, 150, 150, 1)
+    margin-top: 20px
+    margin-bottom: 20px
+
+.welcomeMSG
+    color: white
+    font-size: 40px
+    position: absolute
+    left: 3%
+    bottom: 20%
+
+
+.containerPageContact
+    color: white
+    position: absolute
+    top: 50%
+    font-size: 30px
+    width: 100%
+    opacity: 0
+    transition: 0.4s
+    .bnet
+        display: flex
+        flex-direction: row
+        width: 80%
+        justify-content: space-around
+        h3
+            margin: 0
+            font-weight: lighter
+
+@media screen and ( max-width: 1000px )
+    .right-nav
+        background-color: black !important
+        height: 250px !important
+    .right-nav-ol
+        width: 100% !important
+        background-color: black !important
+        flex-wrap: wrap !important
+        &-li
+            margin: 0px !important
+    .barre
+        height: 1px !important
+        width: 100% !important
+        margin-top: 20px
+        margin-bottom: 20px
+    header
+        display: flex
+        flex-direction: column  !important
+        background-color: black !important
+    .emplacement-logo
+        justify-content: center !important
+        margin-left: 0px !important
+        padding-bottom: 30px !important
+        background-color: black !important
+    .cross
+        top: 6% !important
+    
