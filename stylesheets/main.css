@@ -117,14 +117,15 @@ main {
 .link-style {
   text-decoration: none !important;
   cursor: pointer;
+  color: white;
 }
-/* line 92, ../sass/main.sass */
+/* line 93, ../sass/main.sass */
 .link-style:visited {
   text-decoration: none !important;
-  color: unset;
+  color: white;
 }
 
-/* line 96, ../sass/main.sass */
+/* line 97, ../sass/main.sass */
 .nous-rejoindre {
   width: 100%;
   transform: translateY(0%);
@@ -137,21 +138,21 @@ main {
   margin-top: 100px;
 }
 
-/* line 107, ../sass/main.sass */
+/* line 108, ../sass/main.sass */
 .barre {
   width: 1px;
   height: 40px;
   background-color: red;
 }
 
-/* line 112, ../sass/main.sass */
+/* line 113, ../sass/main.sass */
 .socials {
   width: 28px;
   object-fit: contain;
   margin-right: 10px;
 }
 
-/* line 118, ../sass/main.sass */
+/* line 119, ../sass/main.sass */
 .pageRoster {
   height: 0.01px;
   width: 100%;
@@ -163,7 +164,7 @@ main {
   transition: 0.4s;
 }
 
-/* line 128, ../sass/main.sass */
+/* line 129, ../sass/main.sass */
 .cross {
   position: absolute;
   right: 2%;
@@ -176,13 +177,13 @@ main {
   padding-right: 8px;
   border-radius: 4px;
 }
-/* line 139, ../sass/main.sass */
+/* line 140, ../sass/main.sass */
 .cross:hover {
   cursor: pointer;
   transform: scale(1.3);
 }
 
-/* line 143, ../sass/main.sass */
+/* line 144, ../sass/main.sass */
 .titreRoster {
   color: white;
   margin: 0;
@@ -194,7 +195,7 @@ main {
   font-style: italic;
 }
 
-/* line 153, ../sass/main.sass */
+/* line 154, ../sass/main.sass */
 .containerPageRoster {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   height: 80%;
@@ -207,74 +208,74 @@ main {
   border-radius: 4px;
 }
 
-/* line 164, ../sass/main.sass */
+/* line 165, ../sass/main.sass */
 .tanks, .heals, .dps {
   color: white;
   margin-top: 30px;
 }
 
-/* line 168, ../sass/main.sass */
+/* line 169, ../sass/main.sass */
 .ol-no-style {
   list-style-type: none;
   padding: 0;
 }
 
-/* line 172, ../sass/main.sass */
+/* line 173, ../sass/main.sass */
 .dh {
   color: #A330C9;
 }
 
-/* line 174, ../sass/main.sass */
+/* line 175, ../sass/main.sass */
 .dk {
   color: red;
 }
 
-/* line 176, ../sass/main.sass */
+/* line 177, ../sass/main.sass */
 .drood {
   color: orange;
 }
 
-/* line 178, ../sass/main.sass */
+/* line 179, ../sass/main.sass */
 .pal {
   color: #f58CBA;
 }
 
-/* line 181, ../sass/main.sass */
+/* line 182, ../sass/main.sass */
 .lock {
   color: #9482C9;
 }
 
-/* line 184, ../sass/main.sass */
+/* line 185, ../sass/main.sass */
 .shammy {
   color: #0070DE;
 }
 
-/* line 187, ../sass/main.sass */
+/* line 188, ../sass/main.sass */
 .mage {
   color: #69CCF0;
 }
 
-/* line 190, ../sass/main.sass */
+/* line 191, ../sass/main.sass */
 .monk {
   color: #00FF96;
 }
 
-/* line 193, ../sass/main.sass */
+/* line 194, ../sass/main.sass */
 .warrior {
   color: #C79C6E;
 }
 
-/* line 196, ../sass/main.sass */
+/* line 197, ../sass/main.sass */
 .hunter {
   color: #ABD473;
 }
 
-/* line 199, ../sass/main.sass */
+/* line 200, ../sass/main.sass */
 .rogue {
   color: #FFF569;
 }
 
-/* line 202, ../sass/main.sass */
+/* line 203, ../sass/main.sass */
 .barreHorizontale {
   height: 1px;
   width: 100%;
@@ -283,7 +284,7 @@ main {
   margin-bottom: 20px;
 }
 
-/* line 209, ../sass/main.sass */
+/* line 210, ../sass/main.sass */
 .welcomeMSG {
   color: white;
   font-size: 40px;
@@ -292,7 +293,7 @@ main {
   bottom: 20%;
 }
 
-/* line 216, ../sass/main.sass */
+/* line 217, ../sass/main.sass */
 .active {
   background-color: #b90000;
   cursor: pointer;
@@ -303,7 +304,7 @@ main {
   color: white;
 }
 
-/* line 225, ../sass/main.sass */
+/* line 226, ../sass/main.sass */
 .acceuil {
   width: 80%;
   height: 40%;
@@ -319,14 +320,14 @@ main {
   top: 25%;
   padding: 100px;
 }
-/* line 239, ../sass/main.sass */
+/* line 240, ../sass/main.sass */
 .acceuil .text-acceuil {
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
   font-size: 55px;
 }
-/* line 244, ../sass/main.sass */
+/* line 245, ../sass/main.sass */
 .acceuil .sous-titre-acceuil {
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -334,7 +335,7 @@ main {
   font-size: 25px;
 }
 
-/* line 250, ../sass/main.sass */
+/* line 251, ../sass/main.sass */
 .btnRejoignezNous {
   background-color: rgba(0, 0, 0, 0.8);
   padding-left: 10px;
@@ -344,12 +345,12 @@ main {
   border-radius: 4px;
   cursor: pointer;
 }
-/* line 258, ../sass/main.sass */
+/* line 259, ../sass/main.sass */
 .btnRejoignezNous:hover {
   color: red;
 }
 
-/* line 261, ../sass/main.sass */
+/* line 262, ../sass/main.sass */
 .containerPageContact {
   color: white;
   position: absolute;
@@ -359,20 +360,20 @@ main {
   opacity: 0;
   transition: 0.4s;
 }
-/* line 269, ../sass/main.sass */
+/* line 270, ../sass/main.sass */
 .containerPageContact .bnet {
   display: flex;
   flex-direction: row;
   width: 80%;
   justify-content: space-around;
 }
-/* line 274, ../sass/main.sass */
+/* line 275, ../sass/main.sass */
 .containerPageContact .bnet h3 {
   margin: 0;
   font-weight: lighter;
 }
 
-/* line 278, ../sass/main.sass */
+/* line 279, ../sass/main.sass */
 .cross-left-menu {
   position: absolute;
   right: 0%;
@@ -386,12 +387,12 @@ main {
   border-radius: 4px;
   cursor: pointer;
 }
-/* line 290, ../sass/main.sass */
+/* line 291, ../sass/main.sass */
 .cross-left-menu:hover {
   transform: scale(1.3);
 }
 
-/* line 293, ../sass/main.sass */
+/* line 294, ../sass/main.sass */
 .left-side-menu {
   background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0 0 20px black;
@@ -401,7 +402,7 @@ main {
   display: none;
   z-index: 999;
 }
-/* line 301, ../sass/main.sass */
+/* line 302, ../sass/main.sass */
 .left-side-menu-ol {
   list-style-type: none;
   color: white;
@@ -413,20 +414,20 @@ main {
   padding: 0px;
   padding-left: 20px;
 }
-/* line 311, ../sass/main.sass */
+/* line 312, ../sass/main.sass */
 .left-side-menu-ol-li {
   display: flex;
   align-items: center;
   height: 50px;
   width: 100%;
 }
-/* line 316, ../sass/main.sass */
+/* line 317, ../sass/main.sass */
 .left-side-menu-ol-li:hover {
   background-color: black;
   cursor: pointer;
 }
 
-/* line 320, ../sass/main.sass */
+/* line 321, ../sass/main.sass */
 .left-side-socials-ol {
   color: white;
   font-size: 25px;
@@ -438,24 +439,24 @@ main {
   padding: 0px;
 }
 
-/* line 330, ../sass/main.sass */
+/* line 331, ../sass/main.sass */
 .socials-icons {
   list-style-type: none;
 }
-/* line 332, ../sass/main.sass */
+/* line 333, ../sass/main.sass */
 .socials-icons-li {
   font-size: 20px;
   color: white;
   cursor: pointer;
   width: 100%;
 }
-/* line 337, ../sass/main.sass */
+/* line 338, ../sass/main.sass */
 .socials-icons-li:hover {
   background-color: black;
   cursor: pointer;
 }
 
-/* line 341, ../sass/main.sass */
+/* line 342, ../sass/main.sass */
 .barre-left-menu {
   height: 2px;
   width: 80%;
@@ -464,7 +465,7 @@ main {
   margin-bottom: 20px;
 }
 
-/* line 348, ../sass/main.sass */
+/* line 349, ../sass/main.sass */
 .close-page-acceuil {
   position: absolute;
   right: 5%;
@@ -474,18 +475,18 @@ main {
   cursor: pointer;
   display: none;
 }
-/* line 356, ../sass/main.sass */
+/* line 357, ../sass/main.sass */
 .close-page-acceuil:hover {
   transform: scale(1.3);
 }
 
 @media screen and (max-width: 1000px) {
-  /* line 360, ../sass/main.sass */
+  /* line 361, ../sass/main.sass */
   .right-nav {
     display: none !important;
   }
 
-  /* line 362, ../sass/main.sass */
+  /* line 363, ../sass/main.sass */
   .barre {
     height: 2px !important;
     width: 100% !important;
@@ -493,7 +494,7 @@ main {
     margin-bottom: 20px;
   }
 
-  /* line 367, ../sass/main.sass */
+  /* line 368, ../sass/main.sass */
   header {
     display: flex;
     flex-direction: column !important;
@@ -501,18 +502,18 @@ main {
     height: unset !important;
   }
 
-  /* line 372, ../sass/main.sass */
+  /* line 373, ../sass/main.sass */
   .emplacement-logo {
     margin-left: 40px !important;
     padding-bottom: 0px !important;
   }
 
-  /* line 375, ../sass/main.sass */
+  /* line 376, ../sass/main.sass */
   .cross {
     top: 6% !important;
   }
 
-  /* line 377, ../sass/main.sass */
+  /* line 378, ../sass/main.sass */
   .left-side-menu {
     display: block !important;
     height: 90%;
@@ -524,13 +525,13 @@ main {
     transition: 0.4s;
   }
 
-  /* line 386, ../sass/main.sass */
+  /* line 387, ../sass/main.sass */
   .acceuil {
     top: 10% !important;
     height: 65% !important;
   }
 
-  /* line 389, ../sass/main.sass */
+  /* line 390, ../sass/main.sass */
   .close-page-acceuil {
     display: block;
   }
