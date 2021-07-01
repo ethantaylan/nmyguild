@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="faveicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b00cc70e27.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -21,23 +22,62 @@
         </div>
         <nav class="right-nav">
             <ol class="right-nav-ol">
-                <li id="btnAcceuil" class="right-nav-ol-li">Acceuil</li>
+                <li id="btnAcceuil" class="right-nav-ol-li active">Accueil</li>
                 <li id="btnRoster" class="right-nav-ol-li">Roster</li>
                 <li id="btnNousRejoindre" class="right-nav-ol-li"><a class="link-style" target="_blank" href="https://forms.gle/tKej5mLD8UhWgQTB9">Nous rejoindre</a></li>
                 <li id="btnContact" class="right-nav-ol-li">Contact</li>
                 <div class="barre"></div>
                 <li id="btnRaiderIo" class="right-nav-ol-li"><a class="link-style" target="_blank" href="https://raider.io/guilds/eu/archimonde/Nmy">Raider.IO</a></li>
                 <li id="btnDiscord" class="right-nav-ol-li"><a class="link-style" target="_blank" href="https://discord.gg/wBSpAD787f">Discord</a></li>
-
             </ol>
         </nav>
+        <span id ="btnMenu" class="close-page-acceuil"><i class="fas fa-bars"></i></span>
     </header>
+    <div id="pageAcceuil" class="acceuil">
+        <h1 class="text-acceuil">
+            Bienvenu sur le site de la guilde Enemy
+        </h1>
+        <h4 class="sous-titre-acceuil">
+            <span style="color: red">Enemy</span> est une guilde créer de base par des joueurs de mythique + évoluant aux alentours de <strong>2000 R.io</strong><br>
+            La guilde recrute des joueurs pour son roster MM. Les pré-requis sont simples ; <br>
+            - Age : 18+<br>
+            - iLvl : 210+<br>
+            - R.io : 1000+<br>
+    
+            Sinon, la guilde recrute tout autres joueurs de type casual, fun, voulant progresser ou tout simplement jouer dans notre guilde. <br>
+            Sans pré-requis !<br>
+            <br>
+            <br>
+
+            <a class="link-style" href="https://docs.google.com/forms/d/e/1FAIpQLSeNdltzWdM0XoRyPjj670KY_ujtHLLltV5VI1lkVkmRkegBsA/viewform"><span class="btnRejoignezNous">Rejoignez-nous !</span></a>
+        </h4>
+    </div>
+    <div id="leftMenu" class="left-side-menu">
+        <span id="btnCloseLeftMenu" class="cross-left-menu">X</span>
+        <ol class="left-side-menu-ol">
+            <li id="btnLeftAcceuil" class="left-side-menu-ol-li">Accueil</li>
+            <li id="btnLeftRoster" class="left-side-menu-ol-li">Roster</li>
+            <li id="btnLeftNousRejoindre" class="left-side-menu-ol-li">Nous rejoindre</li>
+            <li id="btnLeftContact" class="left-side-menu-ol-li">Contact</li>
+        </ol>
+        <div class="barre-left-menu"></div>
+        <ol class="left-side-socials-ol">
+            <li class="left-side-menu-socials-li">Discord</li>
+            <li class="left-side-menu-socials-li">Raider.IO</li>
+        </ol>
+        <ol class="socials-icons">
+            <li class="socials-icons-li"><i class="fab fa-instagram"></i></li>
+            <li class="socials-icons-li"></li>
+            <li class="socials-icons-li"></li>
+            <li class="socials-icons-li"></li>
+        </ol>
+    </div>
     <main id="container">
         <div id="pageRoster" class="pageRoster">
             <h1 class="titreRoster">Roster raid MM</h1>
             <h4 style="color: white; font-weight: 400;">Horraires et journées de raids (temporaire) Lundi - Mercredi / 21h00 - 23h30</h4>
             <span id="cross" class="cross">X</span>
-            <div class="containerPageRoster">
+            <div id="containerPageRoster" class="containerPageRoster">
                 <div class="tanks">
                     <ol class="ol-no-style">
                         <li>2<span style="font-size: 12px; color: red"> Tanks</span></li>
@@ -87,6 +127,18 @@
             </div>
         </div>
     </main>
+    <a href="http://www.ethantaylan.com" target="_blank">
+        <h5 style="
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        color: gray;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 12;
+        letter-spacing: 2px;
+        transform: translate(-50%);"
+        >copyright - www.ethantaylan.com</h5>
+    </a>
 </body>
 <script src="index.js"></script>
 </html>

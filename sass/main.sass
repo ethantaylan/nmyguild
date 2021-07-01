@@ -17,6 +17,7 @@ html, body
         position: relative
         height: 80px
         z-index: 2
+        background-color: rgba(0, 0, 0, 0.6)
         .left-nav
             width: 33%
             &-ol
@@ -64,14 +65,19 @@ html, body
                 &-li
                     margin: 5px
                     transition: 0.4s
-                    display: flex
+                    display: block
                     flex-direction: row
                     align-items: center
+                    justify-content: center
+                    width: 13%
+                    text-align: center
+                    padding-top: 15px
+                    padding-bottom: 15px
                     &:hover
-                        transform: scale(1.04)
-                        transition: 0.4
+                        background-color: #b90000
                         cursor: pointer
-                        color: red !important
+                        color: white
+                        border-radius: 4px
                     
 main
     width: 95%
@@ -110,7 +116,7 @@ main
 
 
 .pageRoster
-    height: 100%
+    height: 0.01px
     width: 100%
     display: flex
     justify-content: center
@@ -126,6 +132,10 @@ main
     font-size: 33px
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5)
     color: red
+    background-color: black
+    padding-left: 8px
+    padding-right: 8px
+    border-radius: 4px
     &:hover
         cursor: pointer
         transform: scale(1.3)
@@ -144,11 +154,12 @@ main
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4)
     height: 80%
     width: 80%
-    display: flex
+    display: none
     flex-direction: row
     justify-content: space-around
-    background-color: rgba(0, 0, 0, 0.4)
+    background-color: rgba(0, 0, 0, 0.8)
     border: 1px solid rgba(150, 0, 0, 0.7)
+    border-radius: 4px
 
 .tanks, .heals, .dps
     color: white
@@ -202,6 +213,50 @@ main
     left: 3%
     bottom: 20%
 
+.active
+    background-color: #b90000
+    cursor: pointer
+    padding-left: 10px
+    padding-right: 10px
+    padding-top: 5px
+    padding-bottom: 5px
+    color: white
+
+.acceuil
+    width: 80%
+    height: 40%
+    background-color: rgba(0, 0, 0, 0.6)
+    color: white
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    position: absolute
+    left: 50%
+    transform: translate(-50%)
+    top: 25%
+    padding: 100px
+    .text-acceuil
+        text-align: center
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        font-weight: 300
+        font-size: 55px
+    .sous-titre-acceuil
+        text-align: center
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        font-weight: 100
+        font-size: 25px
+
+.btnRejoignezNous
+    background-color: rgba(0, 0, 0, 0.8)
+    padding-left: 10px
+    padding-right: 10px
+    padding-top: 5px
+    padding-bottom: 5px
+    border-radius: 4px
+    cursor: pointer
+    &:hover
+        color: red
 
 .containerPageContact
     color: white
@@ -220,31 +275,116 @@ main
             margin: 0
             font-weight: lighter
 
+.cross-left-menu
+    position: absolute
+    right: 0%
+    top: 0%
+    font-size: 30px
+    margin: 20px
+    background-color: black
+    color: white
+    padding-left: 10px
+    padding-right: 10px
+    border-radius: 4px
+    cursor: pointer
+    &:hover
+        transform: scale(1.3)
+
+.left-side-menu
+    background-color: rgba(0, 0, 0, 0.8)
+    box-shadow: 0 0 20px black
+    height: 90%
+    width: 400px
+    position: absolute
+    display: none
+    z-index: 999
+    &-ol
+        list-style-type: none
+        color: white
+        height: 40%
+        justify-content: space-around
+        display: flex
+        flex-direction: column
+        font-size: 25px
+        padding: 0px
+        padding-left: 20px
+        &-li
+            display: flex
+            align-items: center
+            height: 50px
+            width: 100%
+            &:hover
+                background-color: black
+                cursor: pointer
+
+.left-side-socials-ol
+    color: white
+    font-size: 25px
+    list-style-type: none
+    display: flex
+    flex-direction: row
+    width: 100%
+    justify-content: space-around
+    padding: 0px
+
+.socials-icons
+    list-style-type: none
+    &-li
+        font-size: 20px
+        color: white
+        cursor: pointer
+        width: 100%
+        &:hover
+            background-color: black
+            cursor: pointer
+
+.barre-left-menu
+    height: 2px
+    width: 80%
+    background-color: black
+    margin-top: 20px
+    margin-bottom: 20px
+
+.close-page-acceuil
+    position: absolute
+    right: 5%
+    font-size: 40px
+    color: red
+    top: 10%
+    cursor: pointer
+    display: none
+    &:hover
+        transform: scale(1.3)
+
 @media screen and ( max-width: 1000px )
     .right-nav
-        background-color: black !important
-        height: 250px !important
-    .right-nav-ol
-        width: 100% !important
-        background-color: black !important
-        flex-wrap: wrap !important
-        &-li
-            margin: 0px !important
-            text-decoration: none
+        display: none !important
     .barre
-        height: 1px !important
+        height: 2px !important
         width: 100% !important
         margin-top: 20px
         margin-bottom: 20px
     header
         display: flex
         flex-direction: column  !important
-        background-color: black !important
+        background-color: rgba(0, 0, 0, 0.6) !important
+        height: unset !important
     .emplacement-logo
-        justify-content: center !important
-        margin-left: 0px !important
-        padding-bottom: 30px !important
-        background-color: black !important
+        margin-left: 40px !important
+        padding-bottom: 0px !important
     .cross
         top: 6% !important
-    
+    .left-side-menu
+        display: block !important
+        height: 90%
+        border-top-right-radius: 4px
+        border-bottom-right-radius: 4px
+        margin-top: 20px
+        opacity: 1
+        transform: translateX(-400px)
+        transition: 0.4s
+    .acceuil
+        top: 10% !important
+        height: 65% !important
+    .close-page-acceuil
+        display: block

@@ -20,12 +20,13 @@ html header, body header {
   position: relative;
   height: 80px;
   z-index: 2;
+  background-color: rgba(0, 0, 0, 0.6);
 }
-/* line 20, ../sass/main.sass */
+/* line 21, ../sass/main.sass */
 html header .left-nav, body header .left-nav {
   width: 33%;
 }
-/* line 22, ../sass/main.sass */
+/* line 23, ../sass/main.sass */
 html header .left-nav-ol, body header .left-nav-ol {
   display: flex;
   flex-direction: row;
@@ -35,11 +36,11 @@ html header .left-nav-ol, body header .left-nav-ol {
   color: white;
   padding: 0;
 }
-/* line 30, ../sass/main.sass */
+/* line 31, ../sass/main.sass */
 html header .left-nav-ol-li, body header .left-nav-ol-li {
   margin: 5px;
 }
-/* line 32, ../sass/main.sass */
+/* line 33, ../sass/main.sass */
 html header .emplacement-logo, body header .emplacement-logo {
   display: flex;
   flex-direction: row;
@@ -47,7 +48,7 @@ html header .emplacement-logo, body header .emplacement-logo {
   margin-left: 40px;
   width: 100%;
 }
-/* line 38, ../sass/main.sass */
+/* line 39, ../sass/main.sass */
 html header .emplacement-logo .logo, body header .emplacement-logo .logo {
   color: white;
   font-size: 40px;
@@ -56,21 +57,21 @@ html header .emplacement-logo .logo, body header .emplacement-logo .logo {
   font-weight: 900;
   font-style: italic;
 }
-/* line 45, ../sass/main.sass */
+/* line 46, ../sass/main.sass */
 html header .emplacement-logo .red-head, body header .emplacement-logo .red-head {
   width: 60 px;
   height: 60px;
   object-fit: contain;
   margin-right: 10px;
 }
-/* line 50, ../sass/main.sass */
+/* line 51, ../sass/main.sass */
 html header .right-nav, body header .right-nav {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
 }
-/* line 55, ../sass/main.sass */
+/* line 56, ../sass/main.sass */
 html header .right-nav-ol, body header .right-nav-ol {
   width: 100%;
   list-style-type: none;
@@ -81,23 +82,28 @@ html header .right-nav-ol, body header .right-nav-ol {
   align-items: center;
   padding: 0;
 }
-/* line 64, ../sass/main.sass */
+/* line 65, ../sass/main.sass */
 html header .right-nav-ol-li, body header .right-nav-ol-li {
   margin: 5px;
   transition: 0.4s;
-  display: flex;
+  display: block;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  width: 13%;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-/* line 70, ../sass/main.sass */
+/* line 76, ../sass/main.sass */
 html header .right-nav-ol-li:hover, body header .right-nav-ol-li:hover {
-  transform: scale(1.04);
-  transition: 0.4;
+  background-color: #b90000;
   cursor: pointer;
-  color: red !important;
+  color: white;
+  border-radius: 4px;
 }
 
-/* line 76, ../sass/main.sass */
+/* line 82, ../sass/main.sass */
 main {
   width: 95%;
   position: absolute;
@@ -107,18 +113,18 @@ main {
   margin-top: 10px;
 }
 
-/* line 83, ../sass/main.sass */
+/* line 89, ../sass/main.sass */
 .link-style {
   text-decoration: none !important;
   cursor: pointer;
 }
-/* line 86, ../sass/main.sass */
+/* line 92, ../sass/main.sass */
 .link-style:visited {
   text-decoration: none !important;
   color: unset;
 }
 
-/* line 90, ../sass/main.sass */
+/* line 96, ../sass/main.sass */
 .nous-rejoindre {
   width: 100%;
   transform: translateY(0%);
@@ -131,23 +137,23 @@ main {
   margin-top: 100px;
 }
 
-/* line 101, ../sass/main.sass */
+/* line 107, ../sass/main.sass */
 .barre {
   width: 1px;
   height: 40px;
   background-color: red;
 }
 
-/* line 106, ../sass/main.sass */
+/* line 112, ../sass/main.sass */
 .socials {
   width: 28px;
   object-fit: contain;
   margin-right: 10px;
 }
 
-/* line 112, ../sass/main.sass */
+/* line 118, ../sass/main.sass */
 .pageRoster {
-  height: 100%;
+  height: 0.01px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -157,7 +163,7 @@ main {
   transition: 0.4s;
 }
 
-/* line 122, ../sass/main.sass */
+/* line 128, ../sass/main.sass */
 .cross {
   position: absolute;
   right: 2%;
@@ -165,14 +171,18 @@ main {
   font-size: 33px;
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   color: red;
+  background-color: black;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 4px;
 }
-/* line 129, ../sass/main.sass */
+/* line 139, ../sass/main.sass */
 .cross:hover {
   cursor: pointer;
   transform: scale(1.3);
 }
 
-/* line 133, ../sass/main.sass */
+/* line 143, ../sass/main.sass */
 .titreRoster {
   color: white;
   margin: 0;
@@ -184,86 +194,87 @@ main {
   font-style: italic;
 }
 
-/* line 143, ../sass/main.sass */
+/* line 153, ../sass/main.sass */
 .containerPageRoster {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   height: 80%;
   width: 80%;
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: space-around;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
   border: 1px solid rgba(150, 0, 0, 0.7);
+  border-radius: 4px;
 }
 
-/* line 153, ../sass/main.sass */
+/* line 164, ../sass/main.sass */
 .tanks, .heals, .dps {
   color: white;
   margin-top: 30px;
 }
 
-/* line 157, ../sass/main.sass */
+/* line 168, ../sass/main.sass */
 .ol-no-style {
   list-style-type: none;
   padding: 0;
 }
 
-/* line 161, ../sass/main.sass */
+/* line 172, ../sass/main.sass */
 .dh {
   color: #A330C9;
 }
 
-/* line 163, ../sass/main.sass */
+/* line 174, ../sass/main.sass */
 .dk {
   color: red;
 }
 
-/* line 165, ../sass/main.sass */
+/* line 176, ../sass/main.sass */
 .drood {
   color: orange;
 }
 
-/* line 167, ../sass/main.sass */
+/* line 178, ../sass/main.sass */
 .pal {
   color: #f58CBA;
 }
 
-/* line 170, ../sass/main.sass */
+/* line 181, ../sass/main.sass */
 .lock {
   color: #9482C9;
 }
 
-/* line 173, ../sass/main.sass */
+/* line 184, ../sass/main.sass */
 .shammy {
   color: #0070DE;
 }
 
-/* line 176, ../sass/main.sass */
+/* line 187, ../sass/main.sass */
 .mage {
   color: #69CCF0;
 }
 
-/* line 179, ../sass/main.sass */
+/* line 190, ../sass/main.sass */
 .monk {
   color: #00FF96;
 }
 
-/* line 182, ../sass/main.sass */
+/* line 193, ../sass/main.sass */
 .warrior {
   color: #C79C6E;
 }
 
-/* line 185, ../sass/main.sass */
+/* line 196, ../sass/main.sass */
 .hunter {
   color: #ABD473;
 }
 
-/* line 188, ../sass/main.sass */
+/* line 199, ../sass/main.sass */
 .rogue {
   color: #FFF569;
 }
 
-/* line 191, ../sass/main.sass */
+/* line 202, ../sass/main.sass */
 .barreHorizontale {
   height: 1px;
   width: 100%;
@@ -272,7 +283,7 @@ main {
   margin-bottom: 20px;
 }
 
-/* line 198, ../sass/main.sass */
+/* line 209, ../sass/main.sass */
 .welcomeMSG {
   color: white;
   font-size: 40px;
@@ -281,7 +292,64 @@ main {
   bottom: 20%;
 }
 
-/* line 206, ../sass/main.sass */
+/* line 216, ../sass/main.sass */
+.active {
+  background-color: #b90000;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+/* line 225, ../sass/main.sass */
+.acceuil {
+  width: 80%;
+  height: 40%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 25%;
+  padding: 100px;
+}
+/* line 239, ../sass/main.sass */
+.acceuil .text-acceuil {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 55px;
+}
+/* line 244, ../sass/main.sass */
+.acceuil .sous-titre-acceuil {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  font-size: 25px;
+}
+
+/* line 250, ../sass/main.sass */
+.btnRejoignezNous {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* line 258, ../sass/main.sass */
+.btnRejoignezNous:hover {
+  color: red;
+}
+
+/* line 261, ../sass/main.sass */
 .containerPageContact {
   color: white;
   position: absolute;
@@ -291,63 +359,179 @@ main {
   opacity: 0;
   transition: 0.4s;
 }
-/* line 214, ../sass/main.sass */
+/* line 269, ../sass/main.sass */
 .containerPageContact .bnet {
   display: flex;
   flex-direction: row;
   width: 80%;
   justify-content: space-around;
 }
-/* line 219, ../sass/main.sass */
+/* line 274, ../sass/main.sass */
 .containerPageContact .bnet h3 {
   margin: 0;
   font-weight: lighter;
 }
 
+/* line 278, ../sass/main.sass */
+.cross-left-menu {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  font-size: 30px;
+  margin: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* line 290, ../sass/main.sass */
+.cross-left-menu:hover {
+  transform: scale(1.3);
+}
+
+/* line 293, ../sass/main.sass */
+.left-side-menu {
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px black;
+  height: 90%;
+  width: 400px;
+  position: absolute;
+  display: none;
+  z-index: 999;
+}
+/* line 301, ../sass/main.sass */
+.left-side-menu-ol {
+  list-style-type: none;
+  color: white;
+  height: 40%;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  padding: 0px;
+  padding-left: 20px;
+}
+/* line 311, ../sass/main.sass */
+.left-side-menu-ol-li {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+}
+/* line 316, ../sass/main.sass */
+.left-side-menu-ol-li:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+/* line 320, ../sass/main.sass */
+.left-side-socials-ol {
+  color: white;
+  font-size: 25px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0px;
+}
+
+/* line 330, ../sass/main.sass */
+.socials-icons {
+  list-style-type: none;
+}
+/* line 332, ../sass/main.sass */
+.socials-icons-li {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+/* line 337, ../sass/main.sass */
+.socials-icons-li:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+/* line 341, ../sass/main.sass */
+.barre-left-menu {
+  height: 2px;
+  width: 80%;
+  background-color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 348, ../sass/main.sass */
+.close-page-acceuil {
+  position: absolute;
+  right: 5%;
+  font-size: 40px;
+  color: red;
+  top: 10%;
+  cursor: pointer;
+  display: none;
+}
+/* line 356, ../sass/main.sass */
+.close-page-acceuil:hover {
+  transform: scale(1.3);
+}
+
 @media screen and (max-width: 1000px) {
-  /* line 224, ../sass/main.sass */
+  /* line 360, ../sass/main.sass */
   .right-nav {
-    background-color: black !important;
-    height: 250px !important;
+    display: none !important;
   }
 
-  /* line 227, ../sass/main.sass */
-  .right-nav-ol {
-    width: 100% !important;
-    background-color: black !important;
-    flex-wrap: wrap !important;
-  }
-  /* line 231, ../sass/main.sass */
-  .right-nav-ol-li {
-    margin: 0px !important;
-    text-decoration: none;
-  }
-
-  /* line 234, ../sass/main.sass */
+  /* line 362, ../sass/main.sass */
   .barre {
-    height: 1px !important;
+    height: 2px !important;
     width: 100% !important;
     margin-top: 20px;
     margin-bottom: 20px;
   }
 
-  /* line 239, ../sass/main.sass */
+  /* line 367, ../sass/main.sass */
   header {
     display: flex;
     flex-direction: column !important;
-    background-color: black !important;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    height: unset !important;
   }
 
-  /* line 243, ../sass/main.sass */
+  /* line 372, ../sass/main.sass */
   .emplacement-logo {
-    justify-content: center !important;
-    margin-left: 0px !important;
-    padding-bottom: 30px !important;
-    background-color: black !important;
+    margin-left: 40px !important;
+    padding-bottom: 0px !important;
   }
 
-  /* line 248, ../sass/main.sass */
+  /* line 375, ../sass/main.sass */
   .cross {
     top: 6% !important;
+  }
+
+  /* line 377, ../sass/main.sass */
+  .left-side-menu {
+    display: block !important;
+    height: 90%;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-top: 20px;
+    opacity: 1;
+    transform: translateX(-400px);
+    transition: 0.4s;
+  }
+
+  /* line 386, ../sass/main.sass */
+  .acceuil {
+    top: 10% !important;
+    height: 65% !important;
+  }
+
+  /* line 389, ../sass/main.sass */
+  .close-page-acceuil {
+    display: block;
   }
 }
